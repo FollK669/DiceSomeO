@@ -1,0 +1,114 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+    text-align: center;
+    display: inline-block;
+   
+}
+
+body {
+  background-color: #393E46;
+}
+
+form {
+    align-content: center;
+    align-items: center;
+}
+input {
+    align-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 30px;
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px 0 #232931;
+    font-size: 8rem;
+    color: #4ECCA3;
+    white-space: nowrap;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+    width: 50%;
+    animation-duration: 2s; /* Duur van de animatie in seconden */
+    animation-timing-function: ease-in-out;
+    animation: roll 2s ease-in-out;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+.imageContainer, .imageContainer2 {
+    width: 25%;
+    align-content: center;
+}
+
+button{
+    color: white;
+    background-color: black;
+    border-style: groove;
+    border-width: 2px;
+    border-color: red;
+    border-radius: 20%;
+
+
+}
+
+#myImg {
+    transition: transform 1s ease; /* Voeg een overgang toe aan de transformeigenschap */
+}
+
+. {
+    transform: scale(0.5); /* Verklein het beeld */
+    transition-delay: 0.8s; /* Stel een vertraging in van 0.8 seconden */
+}
+
+.scale15 {
+    transform: scale(1.5); /* Vergroot het beeld */
+    transition-delay: 0.8s; /* Stel een vertraging in van 0.8 seconden */
+}
+
+    .die {
+        width: 80px;
+        height: 80px;
+        perspective: 1000px;
+    }
+
+    .face {
+        width: 110%;
+        height: 110%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        background-color: lightblue;
+        border: 1px solid black;
+        box-sizing: border-box;
+        animation: roll 5s  ease-in-out;
+    }
+
+@keyframes roll {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
